@@ -1,0 +1,219 @@
+.avenue-client-reg {
+      padding: 1rem;
+      max-width: 960px;
+      margin: 0 auto;
+      div{
+            margin-top: 1.2rem;
+      }
+}
+.fine-print{
+      display: flex;
+
+      input{
+            width: 1rem;
+            flex: 10%;
+      }
+      p{
+            flex: 90%;
+            color: #999;
+      }
+}
+.inline{
+      display: inline;
+}
+.avenue-client-reg {
+      margin: 0 auto;
+      max-width: 800px;
+
+      input,
+      select {
+            background: #fff;
+            border: 1px solid #777777;
+            width: 100%;
+            line-height: 1.5rem;
+            padding: 0.25rem 0.5rem;
+            font-family: "Montserrat";
+            font-size: 1.25rem;
+            color: #999;
+      }
+      label {
+            color: #999;
+            font-family: "Montserrat";
+            font-size: 1rem;
+      }
+      h1 {
+            font-weight: bold;
+      }
+}
+.message {
+      textarea {
+            width: 100%;
+      }
+}
+.sign-up {
+      grid-area: signup;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      label {
+            display: inline;
+            padding-left: 0.25rem;
+      }
+      input[type="checkbox"] {
+            width: inherit;
+            display: inline-block;
+            border: 3px solid green;
+            vertical-align: middle;
+      }
+      div {
+            width: calc(33% - 0.7rem);
+      }
+      h2 {
+            width: 100%;
+      }
+}
+.preferences {
+      grid-area: pref;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      div {
+            width: calc(50% - 1.125rem);
+            margin: 1.125rem 0;
+      }
+      h2 {
+            width: 100%;
+      }
+}
+.submit-form {
+      display: block;
+      input {
+            width: 260px;
+            height: 60px;
+            font-weight: bold;
+            color: #454647;
+            border: 2px solid #737373;
+            margin-bottom: 1.5rem;
+      }
+}
+.blueT{
+      color: #00c8c8;
+}
+form{
+      a{
+            text-decoration: none;
+            color: #00c8c8;
+      }
+      a:hover{
+            color: #00e1ff;
+      }
+      h2{
+            font-weight: bold;
+      }
+}
+
+.avenue-client-reg{
+      select{
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none; 
+            background: url("../img/chevron-down-solid.svg") no-repeat;
+            background-position: right;
+      }
+      
+}
+
+@media (min-width: 720px) {
+      .avenue-client-reg {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 1.5rem;
+            grid-template-areas:
+                  "reg reg"
+                  "firstname lastname"
+                  "email email"
+                  "password confirm"
+                  "frequency phone"
+                  "terms terms"
+                  "message message"
+                  "signup signup"
+                  "pref pref"
+                  "create create"
+                  "help help";
+            .reg{
+                  grid-area: reg;
+            }
+            .firstname {
+                  grid-area: firstname;
+            }
+            .lastname {
+                  grid-area: lastname;
+            }
+            .email {
+                  grid-area: email;
+            }
+            .password {
+                  grid-area: password;
+            }
+            .confirm-password {
+                  grid-area: confirm;
+            }
+            .email-frequency {
+                  grid-area: frequency;
+            }
+            .phone-number {
+                  grid-area: phone;
+            }
+            .fine-print {
+                  grid-area: terms;
+            }
+            .message {
+                  grid-area: message;
+                  textarea {
+                        width: 100%;
+                  }
+            }
+            .sign-up {
+                  grid-area: signup;
+                  display: flex;
+                  justify-content: space-around;
+                  flex-wrap: wrap;
+                  label {
+                        display: inline;
+                        padding-left: 0.25rem;
+                  }
+                  input[type="checkbox"] {
+                        width: inherit;
+                        display: inline-block;
+                        border: 3px solid green;
+                        vertical-align: middle;
+                  }
+                  div {
+                        width: calc(33% - 0.5rem);
+                  }
+            }
+            .preferences {
+                  grid-area: pref;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  div {
+                        width: calc(50% - 1.125rem);
+                        margin: 1.125rem 0;
+                  }
+                  
+            }
+            .submit-form{
+                grid-area: create;
+                display: flex;
+                justify-content: space-between;
+                input{
+                    width: 50%;
+                    margin-right: 8rem;
+                }
+            }
+            .help{
+                grid-area: help;
+            }
+        }
+}
